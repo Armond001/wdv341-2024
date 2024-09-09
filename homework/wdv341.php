@@ -52,7 +52,7 @@
     </style>
 
     <script>
-
+     
     </script>
 
 </head>
@@ -65,7 +65,19 @@
 
     <main>
         <div class="row">
+        <figure>
+            <figcaption>
+               <p> <a href="/homework/git terms.PHP">git terms</a></p>
+                <p><a href="https://github.com/Armond001/wdv341-2024/blob/main/homework/git%20terms.PHP">Git Hub</a></p>
+            </figcaption>
+        </figure>
 
+        <figure>
+            <figcaption>
+               <p> <a href="/homework/git terms.PHP">php Basics</a></p>
+                <p><a href="https://github.com/Armond001/wdv341-2024/blob/main/homework/php%20basics.PHP">Git Hub</a></p>
+            </figcaption>
+        </figure>
         </div>
     </main>
 
