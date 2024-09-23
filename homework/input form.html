@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>WDV101 Intro HTML and CSS</title>
+
+<style>
+  body {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 100vh;
+  background-image:url("pexels-pixabay-256490.jpg") ;
+}
+
+	form	{
+    justify-content: center;
+		width:600px;
+		height: 600px;
+    padding: 20px;
+		background-color:rgb(107, 138, 165);	
+    margin: auto;
+    margin-top: 10%;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, .2);
+	}
+
+  .flexForm{
+    display: flex;
+    margin-top: 5%;
+    width: 100%;
+  }
+
+  form label{
+    margin-right: 3%;
+     width: 25%;
+        
+  }
+
+  .formTextInputs input, textarea{
+    width: 50%;
+  }
+
+  #majorLable{
+    margin-left:  40%; ;
+  }
+
+  select{
+    margin: auto;
+    margin-left:  2%; 
+  }
+input[type="submit"]{
+  width: 20%;
+  display: block;
+  margin: auto;
+  margin-right: 0%;
+}
+
+input[type="reset"]{
+ margin: auto;
+ margin-left: 0%;
+ width: 20%;
+}
+
+#comments {
+  width: 50%;
+  height: 50px;
+  max-width: 50%;
+  max-height: 100px;
+}
+
+	form legend	{
+
+		font-size:larger;
+		text-align:center;
+	}
+	
+	
+
+
+</style>
+
+</head>
+
+<body>
+<form id="form1" name="form1" method="post" action="formHandler.php">
+
+  <legend>Contact Us</legend>
+  
+  <div class="formTextInputs">
+  <p class="flexForm">
+  	<label for="first_name">First Name:</label> 
+    <input type="text" name="first_name" id="first_name" />
+  </p>
+  
+  <p class="flexForm" >
+  	<label for="last_name">Last Name:</label> 
+    <input type="text" name="last_name" id="last_name" />
+  </p>
+  
+  <p class="flexForm">
+  	<label for="school_name">School Name:</label> 
+    <input type="text" name="school_name" id="school_name" />
+  </p>
+
+  <p class="flexForm">
+    <label for="email"> Email</label>
+    <input type="email" name="email" id="email">
+  </p>
+
+  </div>
+
+  <p class="flexForm">
+    <label for="Highschool">Highschool</label>
+    <input type="radio" name="academicStanding" id="Highschool" value="Highschool">
+
+    <label for="Freshman">Freshman</label>
+    <input type="radio" name="academicStanding" id="Freshman" value="Freshman">
+
+    <label for="Sophmore">Sophmore</label>
+    <input type="radio" name="academicStanding" id="Sophmore" value="Sophmore">
+  </p>
+
+  <p class="flexForm">
+
+    <lable for="major" id="majorLable">Major</lable>
+    <select name="major" id="major">
+      <option>defualt</option>
+      <option>CIS</option>
+      <option>WDV</option>
+      <option>GD</option>
+    </select>
+  </p>
+
+  <p class="flexForm" >
+    <label for="contactMe" style="margin-left: 20%; margin-right: 2%;">Please contact me with program information</label>
+    <input type="checkbox" name="contactMe" id="contactMe" value="contact me with information"><br>
+    
+    <label for="contactAdvisor">I would like to contact a program Advisor</label>
+    <input type="checkbox" name="contactAdvisor" id="contactAdvisor" value="i want to cantact an advisor">
+  </p>
+
+  <p class="flexForm" >
+    <label for="comments">comments</label>
+    <textarea type="text" name="comments" id ="comments" ></textarea>
+  </p>
+  
+  <p class="flexForm">
+    <input type="submit" name="button" id="button" value="Submit" />
+    <input type="reset" name="button2" id="button2" value="Reset" />
+  </p>
+  
+</form>
+
+<p>&nbsp;</p>
+</body>
+
+</html>
