@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; // Stack header and form
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; // Ensure it works on mobile where height may vary
+  }
+  
+  header {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+    h1 {
+      font-size: 2em;
+      margin: 0;
+  
+      @media (max-width: 600px) {
+        font-size: 1.5em; // Adjust header font size for smaller screens
+      }
+    }
+  }
+  
+  form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+  
+    legend {
+      font-size: 1.5em;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 15px;
+      color: #333;
+  
+      @media (max-width: 600px) {
+        font-size: 1.25em; // Slightly smaller legend on small screens
+      }
+    }
+  
+    .formTextInputs {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+  
+      p.flexForm {
+        display: flex;
+        flex-direction: column;
+  
+        label {
+          font-size: 1em;
+          margin-bottom: 5px;
+          color: #555;
+  
+          @media (max-width: 600px) {
+            font-size: 0.9em; // Slightly smaller label font size
+          }
+        }
+  
+        input,
+        textarea {
+          font-size: 1em;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          outline: none;
+  
+          &:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 3px rgba(0, 123, 255, 0.25);
+          }
+  
+          @media (max-width: 600px) {
+            padding: 8px; // Adjust padding for smaller screens
+          }
+        }
+  
+        textarea {
+          resize: none;
+          height: 100px;
+  
+          @media (max-width: 600px) {
+            height: 80px; // Reduce textarea height on smaller screens
+          }
+        }
+      }
+    }
+  
+    button[type="submit"] {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      font-size: 1em;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: #0056b3;
+      }
+  
+      @media (max-width: 600px) {
+        padding: 8px 12px; // Adjust button size for smaller screens
+        font-size: 0.9em;
+      }
+    }
+  }
+  
+  /* Add a media query for extra small screens */
+  @media (max-width: 400px) {
+    form {
+      padding: 15px; // Reduce padding inside the form
+      max-width: 90%; // Allow the form to take more width on very small screens
+    }
+  
+    .formTextInputs {
+      gap: 10px; // Reduce spacing between fields
+    }
+  }
+  

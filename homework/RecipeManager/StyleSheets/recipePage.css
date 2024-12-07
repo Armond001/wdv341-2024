@@ -1,0 +1,109 @@
+body, h1, h2, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f9f9f9;
+  color: #555;
+  line-height: 1.6;
+}
+
+nav {
+  background-color: #4CAF50;
+  padding: 10px 20px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.recipeContainer {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.recipeContainer .recipeIMG {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.recipeContainer h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+.recipeContainer p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.servingsContainer {
+  margin-bottom: 20px;
+}
+.servingsContainer button {
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.servingsContainer button:hover {
+  background-color: #3d8b40;
+}
+
+.recipeContainerIngredients,
+.recipeContainerDirections {
+  margin-bottom: 20px;
+}
+.recipeContainerIngredients button,
+.recipeContainerDirections button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: background-color 0.3s;
+}
+.recipeContainerIngredients button:hover,
+.recipeContainerDirections button:hover {
+  background-color: #3d8b40;
+}
+.recipeContainerIngredients ul,
+.recipeContainerDirections ul {
+  list-style: disc inside;
+  padding-left: 20px;
+}
+.recipeContainerIngredients ul li,
+.recipeContainerDirections ul li {
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .recipeContainer {
+    padding: 10px;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}/*# sourceMappingURL=recipePage.css.map */
