@@ -1,0 +1,112 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url("../Images/french-country-kitchen-style.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; /* Optional */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.recipeInputPage {
+    .inputForm {
+      background-color: #ffffff;
+      
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+  
+      header {
+        text-align: center;
+  
+        h1 {
+          color: #2c3e50;
+          font-size: 2rem;
+          margin-bottom: 20px;
+        }
+      }
+  
+      form {
+        display: flex;
+        flex-direction: column;
+  
+        p {
+          margin-bottom: 20px;
+  
+          label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+            color: #333;
+          }
+  
+          input[type="text"],
+          input[type="file"],
+          input[type="radio"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+            margin-top: 5px;
+          }
+  
+          input[type="radio"] {
+            width: auto;
+            margin-right: 10px;
+          }
+  
+          .errMsg {
+            color: #e74c3c;
+            font-size: 0.9rem;
+          }
+        }
+  
+        .button-group {
+          display: flex;
+          justify-content: space-between;
+  
+          input[type="submit"],
+          input[type="reset"] {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+          }
+  
+          input[type="submit"]:hover,
+          input[type="reset"]:hover {
+            background-color: #2980b9;
+          }
+        }
+      }
+  
+      #addButtons {
+        margin-top: 20px;
+        display: flex;
+        gap: 10px;
+  
+        button {
+          background-color: #3498db;
+          color: white;
+          border: none;
+          padding: 10px 15px;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+        }
+  
+        button:hover {
+          background-color: #2980b9;
+        }
+      }
+    }
+  }
+  

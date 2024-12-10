@@ -147,7 +147,7 @@ if (isset($_POST['submit'])) {
     <meta name="destription" content="homework ">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../StyleSheets/recipeMangerStyleSheet.css">
+    <link rel="stylesheet" href="../StyleSheets/inputRecipe.css">
 
     <style>
         body{
@@ -169,7 +169,7 @@ if (isset($_POST['submit'])) {
         border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
        
-        width: 100%;
+        width: 66%;
         margin: 0 20px;
     }
 
@@ -316,6 +316,11 @@ if (isset($_POST['submit'])) {
                 <input type="reset" value="Reset">
             </p>
         </form>
+        <footer>
+            <?php 
+            echo "recipe manager". date("Y") . "©";
+            ?>
+        </footer>
     <?php } else { ?>
         <div class="confirmationMessage">
             Recipe updated successfully!
@@ -323,3 +328,5 @@ if (isset($_POST['submit'])) {
     <a href="login.php" class="returnLink">Return to Login</a>
 <?php } ?>
 </div>
+
+</body>

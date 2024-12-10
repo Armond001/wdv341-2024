@@ -192,6 +192,11 @@
         </ul>
     </nav>
     <main></main>
+    <footer>
+            <?php 
+            echo "recipe manager". date("Y") . "©";
+            ?>
+        </footer>
 </body>
 
 </html>

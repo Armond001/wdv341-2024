@@ -164,8 +164,7 @@ nav ul li a:hover {
 
 /* Login Page */
 .logInPage,
-#adminList,
-.inputForm {
+.recipeInputPage {
   background-image: url("../Images/french-country-kitchen-style.jpg");
   background-size: cover;
   background-position: center;
@@ -178,18 +177,14 @@ nav ul li a:hover {
 .logInPage h1,
 .logInPage h2,
 .logInPage h3,
-#adminList h1,
-#adminList h2,
-#adminList h3,
-.inputForm h1,
-.inputForm h2,
-.inputForm h3 {
+.recipeInputPage h1,
+.recipeInputPage h2,
+.recipeInputPage h3 {
   color: #fff;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 .logInPage #loginForm,
-#adminList #loginForm,
-.inputForm #loginForm {
+.recipeInputPage #loginForm {
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 10px;
   padding: 20px;
@@ -200,10 +195,8 @@ nav ul li a:hover {
 }
 .logInPage #loginForm input,
 .logInPage #loginForm button,
-#adminList #loginForm input,
-#adminList #loginForm button,
-.inputForm #loginForm input,
-.inputForm #loginForm button {
+.recipeInputPage #loginForm input,
+.recipeInputPage #loginForm button {
   display: block;
   width: 100%;
   padding: 10px;
@@ -212,8 +205,7 @@ nav ul li a:hover {
   border: 1px solid #ccc;
 }
 .logInPage #loginForm button,
-#adminList #loginForm button,
-.inputForm #loginForm button {
+.recipeInputPage #loginForm button {
   background-color: #3498db;
   color: white;
   border: none;
@@ -221,8 +213,135 @@ nav ul li a:hover {
   transition: background-color 0.3s ease;
 }
 .logInPage #loginForm button:hover,
-#adminList #loginForm button:hover,
-.inputForm #loginForm button:hover {
+.recipeInputPage #loginForm button:hover {
+  background-color: #2980b9;
+}
+
+#adminOptions {
+  margin: 20px 0;
+  width: 90%;
+  max-width: 500px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+#adminOptions ul {
+  padding: 0;
+}
+#adminOptions ul li {
+  padding: 10px 15px;
+  margin: 5px 0;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+#adminOptions ul li:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#adminOptions ul li a {
+  text-decoration: none;
+  color: #3498db;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+#adminOptions ul li a:hover {
+  color: #2980b9;
+}
+#adminOptions ul li .icon {
+  font-size: 1.2rem;
+  color: #888;
+  margin-left: 10px;
+  cursor: pointer;
+}
+#adminOptions ul li .icon:hover {
+  color: #333;
+}
+
+.recipeInputPage .inputForm {
+  background-color: #ffffff;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+}
+.recipeInputPage .inputForm header {
+  text-align: center;
+}
+.recipeInputPage .inputForm header h1 {
+  color: #2c3e50;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.recipeInputPage .inputForm form {
+  display: flex;
+  flex-direction: column;
+}
+.recipeInputPage .inputForm form p {
+  margin-bottom: 20px;
+}
+.recipeInputPage .inputForm form p label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+  color: #333;
+}
+.recipeInputPage .inputForm form p input[type=text],
+.recipeInputPage .inputForm form p input[type=file],
+.recipeInputPage .inputForm form p input[type=radio] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 5px;
+}
+.recipeInputPage .inputForm form p input[type=radio] {
+  width: auto;
+  margin-right: 10px;
+}
+.recipeInputPage .inputForm form p .errMsg {
+  color: #e74c3c;
+  font-size: 0.9rem;
+}
+.recipeInputPage .inputForm form .button-group {
+  display: flex;
+  justify-content: space-between;
+}
+.recipeInputPage .inputForm form .button-group input[type=submit],
+.recipeInputPage .inputForm form .button-group input[type=reset] {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.recipeInputPage .inputForm form .button-group input[type=submit]:hover,
+.recipeInputPage .inputForm form .button-group input[type=reset]:hover {
+  background-color: #2980b9;
+}
+.recipeInputPage .inputForm #addButtons {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+.recipeInputPage .inputForm #addButtons button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.recipeInputPage .inputForm #addButtons button:hover {
   background-color: #2980b9;
 }
 

@@ -53,7 +53,7 @@ $stmt->execute();
     <meta name="destription" content="homework ">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../StyleSheets/recipeMangerStyleSheet.css">
+    <link rel="stylesheet" href="../StyleSheets/adminList.css">
 
     
     <style>
@@ -97,16 +97,15 @@ $stmt->execute();
             </ul>
         </nav>
      
-     <h2>list of events</h2>
+     <h2>list of Recipes</h2>
 
      
 
 <table id="adminRecipeTable">
     <tr>
         <th style="width: 25%;">Recipe Name</th>
-        <th style="width: 40%;">Description</th>
-        <th>Ingredients</th>
-        <th>Actions</th>
+        <th style="width: 40%;">Actions</th>
+        
     </tr>
     <?php 
     if ($stmt->rowCount() == 0) {
@@ -116,8 +115,7 @@ $stmt->execute();
     ?>
     <tr>
         <td><?php echo htmlspecialchars($row["recipeName"]); ?></td>
-        <td><?php echo htmlspecialchars($row["description"]); ?></td>
-        <td><?php echo htmlspecialchars($row["ingredients"]); ?></td>
+        
         <td>
             <a href="updateRecipe.php?recipeID=<?php echo $row['id']; ?>"><button>Update</button></a>
             <a href="deleteRecipe.php?recipeID=<?php echo $row['id']; ?>"><button>Delete</button></a>
@@ -126,12 +124,17 @@ $stmt->execute();
     <?php 
         }
     }
+    
     ?>
 </table>
-
+<footer>
+            <?php 
+            echo "<p>recipe manager". date("Y") . "©</p>";
+            ?>
+    </footer>
       
 </div>
 
 </body>
-<
+
 </html>

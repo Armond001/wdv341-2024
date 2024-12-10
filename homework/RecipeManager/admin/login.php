@@ -81,9 +81,8 @@
 
     <title>Event Login</title>
     <style>
-        .errorFormat {
-            color:red;
-        }
+    
+
     </style>
 </head>
 <body>
@@ -157,5 +156,10 @@
 <?php 
     }
 ?>
+ <footer>
+            <?php 
+            echo "recipe manager". date("Y") . "©";
+            ?>
+</footer>
 </body>
 </html>

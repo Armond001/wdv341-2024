@@ -150,7 +150,7 @@ if( isset ($_POST ['submit'] )){
     <meta name="destription" content="homework ">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../StyleSheets/recipeMangerStyleSheet copy.css">
+    <link rel="stylesheet" href="../StyleSheets/inputRecipe.css">
     <script
         src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
@@ -162,7 +162,7 @@ if( isset ($_POST ['submit'] )){
         .errMsg{
             color: red;
         }
-       
+
 
     </style>
 
@@ -184,6 +184,7 @@ if( isset ($_POST ['submit'] )){
                 let newIngredient= document.createElement("p");
                 let newInput = document.createElement("input"); 
                 newInput.type = "text";
+                newInput.className = "recipeIngredients";
                 
                 newInput.name = "recipeIngredients["+[ingredientCount]+"]";
 
@@ -201,6 +202,8 @@ if( isset ($_POST ['submit'] )){
                 let newDirection= document.createElement("p");
                 let newInput = document.createElement("input"); 
                 newInput.type = "text";
+                newInput.className = "recipeDirection";
+                
                 
                 newInput.name = "recipeDirection["+[directionCount]+"]";
 
@@ -215,13 +218,13 @@ if( isset ($_POST ['submit'] )){
 
 </head>
 
-<body onload="onload()">
-<div class="inputForm"><
+<body onload="onload()" class="recipeInputPage">
+<div class="inputForm">
     <header>
         
         <h1>Jacob's Recipe Manager</h1>
     </header>
-<
+
     <?php
         if ($formRequested){
             //form has been requested 
@@ -275,7 +278,7 @@ if( isset ($_POST ['submit'] )){
                 <lable for="recipeIngredients">Recipe Ingredients</lable>
                 <span class="errMsg"><?php  echo $ingredientError; ?></span>
                 <div id="ingredientContainer">
-                     <input type="text" name="recipeIngredients[0]" class="recipeIngredients">
+                    <p> <input type="text" name="recipeIngredients[0]" class="recipeIngredients"></p>
                 </div>
                
             </p>
@@ -284,7 +287,7 @@ if( isset ($_POST ['submit'] )){
                 <lable for="recipeDirection">Recipe Directions</lable>
                 <span class="errMsg"><?php  echo $directionError; ?></span>
                 <div id="directionContainer">
-                    <input type="text" name="recipeDirection[0]" id="recipeDirection">
+                    <p><input type="text" name="recipeDirection[0]" class="recipeDirection"></p>
                 </div>
                
 
@@ -311,7 +314,11 @@ if( isset ($_POST ['submit'] )){
     <?php
         }
     ?>
-    
+     <footer>
+            <?php 
+            echo "recipe manager". date("Y") . "©";
+            ?>
+    </footer>
 </body>
 
 </html>
